@@ -1,0 +1,17 @@
+<launch>
+
+	<node name="arduino_serial_node" pkg="rosserial_python" type="serial_node.py" output="screen">
+   	<param name="port" value="/dev/ttyACM0" />
+    	<param name="baud" value="57600" />
+	</node>
+
+	<node name="example_pub_cpp" pkg="template_v1" type="example_pub">
+	</node>
+	<node name="example_sub_cpp" pkg="template_v1" type="example_sub">
+	</node>
+	<node name="example_pub_py" pkg="template_v1" type="example_pub.py">
+	</node>
+	<node name="example_sub_py" pkg="template_v1" type="example_sub.py">
+	</node>
+
+</launch>
