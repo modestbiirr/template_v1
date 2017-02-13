@@ -1,4 +1,3 @@
-#Python scripts must be started with the line below
 #!/usr/bin/env python
 
 import rospy
